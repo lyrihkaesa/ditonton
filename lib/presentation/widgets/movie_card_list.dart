@@ -1,8 +1,10 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:ditonton/common/constants.dart';
-import 'package:ditonton/domain/entities/movie.dart';
-import 'package:ditonton/presentation/pages/movie_detail_page.dart';
+import 'package:ditonton/domain/entities/movie/movie.dart';
+import 'package:ditonton/presentation/pages/movie/movie_detail_page.dart';
 import 'package:flutter/material.dart';
+
+import 'icon_error_widget.dart';
 
 class MovieCard extends StatelessWidget {
   final Movie movie;
@@ -36,13 +38,17 @@ class MovieCard extends StatelessWidget {
                   children: [
                     Text(
                       movie.title ?? '-',
+                      key: Key('movie-title'),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: kHeading6,
                     ),
                     SizedBox(height: 16),
                     Text(
-                      movie.overview ?? '-',
+                      movie.overview == null || movie.overview!.isEmpty
+                          ? 'This Movie Overview is empty.'
+                          : movie.overview.toString(),
+                      key: Key('movie-overview'),
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                     ),
@@ -57,12 +63,16 @@ class MovieCard extends StatelessWidget {
               ),
               child: ClipRRect(
                 child: CachedNetworkImage(
+                  key: Key('movie-poster-path'),
                   imageUrl: '$BASE_IMAGE_URL${movie.posterPath}',
                   width: 80,
-                  placeholder: (context, url) => Center(
-                    child: CircularProgressIndicator(),
+                  placeholder: (context, url) => Container(
+                    height: 120,
+                    child: Center(
+                      child: CircularProgressIndicator(),
+                    ),
                   ),
-                  errorWidget: (context, url, error) => Icon(Icons.error),
+                  errorWidget: (context, url, error) => IconErrorWidget(),
                 ),
                 borderRadius: BorderRadius.all(Radius.circular(8)),
               ),
