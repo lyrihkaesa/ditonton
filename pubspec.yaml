@@ -23,6 +23,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  about:
+    path: modules/about
+  core:
+    path: modules/core
+  search:
+    path: modules/search
+  movie:
+    path: modules/movie
+  tv:
+    path: modules/tv
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -37,6 +47,9 @@ dependencies:
   get_it: ^7.1.3
   sqflite: ^2.0.0+3
   path_provider: ^2.0.2
+  flutter_bloc: ^8.1.1
+  firebase_core: ^2.1.0
+  firebase_crashlytics: ^3.0.2
 
 dev_dependencies:
   mockito: ^5.0.8
@@ -45,6 +58,8 @@ dev_dependencies:
     sdk: flutter
   integration_test:
     sdk: flutter
+  bloc_test: ^9.1.0
+  mocktail: ^0.3.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

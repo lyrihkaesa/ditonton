@@ -32,7 +32,7 @@ void main() {
     // text input "mahoka"
     await tester.enterText(find.byType(TextField), 'mahoka');
     await tester.testTextInput.receiveAction(TextInputAction.done);
-    await tester.pumpAndSettle();
+    await tester.pumpAndSettle(const Duration(seconds: 1));
 
     // tap title
     await tester.tap(find.text('The Irregular at Magic High School'));

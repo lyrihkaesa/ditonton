@@ -1,0 +1,37 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "backdrop_path": "/hqalGitZD9f2bOlmRUBd5MoIQqH.jpg",
+      "first_air_date": "2021-07-03",
+      "genre_ids": [16, 10759, 10765],
+      "id": 115312,
+      "name": "The Honor at Magic High School",
+      "origin_country": ["JP"],
+      "original_language": "ja",
+      "original_name": "Original Name",
+      "overview": "A century has passed since magic - true magic, the stuff of legends - has returned to the world. It is spring, the season of new beginnings, and a new class of students is about to begin their studies at the First National Magic University Affiliated High School, nickname: First High.\n\nIt follows the events of the original series as seen through the eyes of Shiba Miyuki, Tatsuya's sister. The life of an honor student comes with a lot of expectations...and unexpected hidden feelings?!",
+      "popularity": 15.744,
+      "poster_path": "/zXN3jur7j2R6zw9ed3jm0rqYtzu.jpg",
+      "vote_average": 6.4,
+      "vote_count": 13
+    },
+    {
+      "backdrop_path": "/lpLZuBJuGDGSzLDVvIDKkdOpLuD.jpg",
+      "first_air_date": "2014-04-06",
+      "genre_ids": [10759, 16, 10765],
+      "id": 60833,
+      "name": "The Irregular at Magic High School",
+      "origin_country": ["JP"],
+      "original_language": "ja",
+      "original_name": "Original Name",
+      "overview": "In a world where magic is not a fairy tale but has existed for one hundred years siblings Tatsuya and Miyuki Shiba prepare to begin their studies at the elite Private Magic University Affiliated High School (Magic High School for short). Entering on different levels of the academic spectrum the two turn the once peaceful campus into a chaotic one.",
+      "popularity": 59.59,
+      "poster_path": "/4mJpMjdghHo4LfvmP1q1mubkEvl.jpg",
+      "vote_average": 7.9,
+      "vote_count": 197
+    }
+  ],
+  "total_pages": 1,
+  "total_results": 2
+}
